@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
+
 import 'package:audioplayers/audioplayers.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  void playSound(int soundChange) {
+  void playSound(int numberChange) {
     final mp3 = AudioCache();
-    mp3.play('note$soundChange.wav');
+    mp3.play('note$numberChange.wav');
   }
 
   @override
@@ -14,171 +15,176 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Material App',
       home: Scaffold(
-        backgroundColor: Colors.black,
-        appBar: AppBar(
-          title: Text('Material App Bar'),
-        ),
-        body: Padding(
-          padding: const EdgeInsets.all(18.0),
-          child: Column(
+          backgroundColor: Colors.black,
+          appBar: AppBar(
+            title: Text('Material App Bar'),
+          ),
+          body: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              OutlinedButton.icon(
-                style: ButtonStyle(
-                  alignment: Alignment.centerRight,
-                  backgroundColor:
-                      MaterialStateProperty.all<Color>(Colors.white),
-                ),
-                onPressed: () {
-                  playSound(1);
-                },
-                icon: Icon(Icons.music_note),
-                label: Container(
-                  decoration: BoxDecoration(
-                    color: Colors.black,
-                    border: Border.all(style: BorderStyle.solid),
-                  ),
-                  height: 20,
-                  width: 150,
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: OutlinedButton.icon(
-                  style: ButtonStyle(
-                    alignment: Alignment.centerRight,
-                    backgroundColor:
-                        MaterialStateProperty.all<Color>(Colors.white),
-                  ),
-                  onPressed: () {
-                    playSound(2);
-                  },
-                  icon: Icon(Icons.music_note),
-                  label: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.black,
-                      border: Border.all(style: BorderStyle.solid),
+              Card(
+                child: Padding(
+                  padding: const EdgeInsets.all(18.0),
+                  child: OutlinedButton.icon(
+                    style: ButtonStyle(
+                      alignment: Alignment.centerRight,
+                      backgroundColor: MaterialStateProperty.all(Colors.white),
                     ),
-                    height: 20,
-                    width: 150,
+                    onPressed: () {
+                      playSound(2);
+                    },
+                    icon: Icon(Icons.music_note),
+                    label: Container(
+                      height: 30,
+                      width: 150,
+                      color: Colors.black,
+                    ),
                   ),
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: OutlinedButton.icon(
-                  style: ButtonStyle(
-                    alignment: Alignment.centerRight,
-                    backgroundColor:
-                        MaterialStateProperty.all<Color>(Colors.white),
-                  ),
-                  onPressed: () {
-                    playSound(3);
-                  },
-                  icon: Icon(Icons.music_note),
-                  label: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.black,
-                      border: Border.all(style: BorderStyle.solid),
+              Card(
+                child: Padding(
+                  padding: const EdgeInsets.all(18.0),
+                  child: OutlinedButton.icon(
+                    style: ButtonStyle(
+                      alignment: Alignment.centerRight,
+                      backgroundColor: MaterialStateProperty.all(Colors.white),
                     ),
-                    height: 20,
-                    width: 150,
+                    onPressed: () {
+                      playSound(2);
+                    },
+                    icon: Icon(Icons.music_note),
+                    label: Container(
+                      height: 30,
+                      width: 150,
+                      color: Colors.black,
+                    ),
                   ),
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: OutlinedButton.icon(
-                  style: ButtonStyle(
-                    alignment: Alignment.centerRight,
-                    backgroundColor:
-                        MaterialStateProperty.all<Color>(Colors.white),
-                  ),
-                  onPressed: () {
-                    playSound(4);
-                  },
-                  icon: Icon(Icons.music_note),
-                  label: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.black,
-                      border: Border.all(style: BorderStyle.solid),
+              Card(
+                child: Padding(
+                  padding: const EdgeInsets.all(18.0),
+                  child: OutlinedButton.icon(
+                    style: ButtonStyle(
+                      alignment: Alignment.centerRight,
+                      backgroundColor: MaterialStateProperty.all(Colors.white),
                     ),
-                    height: 20,
-                    width: 150,
+                    onPressed: () {
+                      playSound(3);
+                    },
+                    icon: Icon(Icons.music_note),
+                    label: Container(
+                      height: 30,
+                      width: 150,
+                      color: Colors.black,
+                    ),
                   ),
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: OutlinedButton.icon(
-                  style: ButtonStyle(
-                    alignment: Alignment.centerRight,
-                    backgroundColor:
-                        MaterialStateProperty.all<Color>(Colors.white),
-                  ),
-                  onPressed: () {
-                    playSound(5);
-                  },
-                  icon: Icon(Icons.music_note),
-                  label: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.black,
-                      border: Border.all(style: BorderStyle.solid),
+              Card(
+                child: Padding(
+                  padding: const EdgeInsets.all(18.0),
+                  child: OutlinedButton.icon(
+                    style: ButtonStyle(
+                      alignment: Alignment.centerRight,
+                      backgroundColor: MaterialStateProperty.all(Colors.white),
                     ),
-                    height: 20,
-                    width: 150,
+                    onPressed: () {
+                      playSound(4);
+                    },
+                    icon: Icon(Icons.music_note),
+                    label: Container(
+                      height: 30,
+                      width: 150,
+                      color: Colors.black,
+                    ),
                   ),
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: OutlinedButton.icon(
-                  style: ButtonStyle(
-                    alignment: Alignment.centerRight,
-                    backgroundColor:
-                        MaterialStateProperty.all<Color>(Colors.white),
-                  ),
-                  onPressed: () {
-                    playSound(6);
-                  },
-                  icon: Icon(Icons.music_note),
-                  label: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.black,
-                      border: Border.all(style: BorderStyle.solid),
+              Card(
+                child: Padding(
+                  padding: const EdgeInsets.all(18.0),
+                  child: OutlinedButton.icon(
+                    style: ButtonStyle(
+                      alignment: Alignment.centerRight,
+                      backgroundColor: MaterialStateProperty.all(Colors.white),
                     ),
-                    height: 20,
-                    width: 150,
+                    onPressed: () {
+                      playSound(5);
+                    },
+                    icon: Icon(Icons.music_note),
+                    label: Container(
+                      height: 30,
+                      width: 150,
+                      color: Colors.black,
+                    ),
                   ),
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: OutlinedButton.icon(
-                  style: ButtonStyle(
-                    alignment: Alignment.centerRight,
-                    backgroundColor:
-                        MaterialStateProperty.all<Color>(Colors.white),
-                  ),
-                  onPressed: () {
-                    playSound(7);
-                  },
-                  icon: Icon(Icons.music_note),
-                  label: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.black,
-                      border: Border.all(style: BorderStyle.solid),
+              Card(
+                child: Padding(
+                  padding: const EdgeInsets.all(18.0),
+                  child: OutlinedButton.icon(
+                    style: ButtonStyle(
+                      alignment: Alignment.centerRight,
+                      backgroundColor: MaterialStateProperty.all(Colors.white),
                     ),
-                    height: 20,
-                    width: 150,
+                    onPressed: () {
+                      playSound(6);
+                    },
+                    icon: Icon(Icons.music_note),
+                    label: Container(
+                      height: 30,
+                      width: 150,
+                      color: Colors.black,
+                    ),
+                  ),
+                ),
+              ),
+              Card(
+                child: Padding(
+                  padding: const EdgeInsets.all(18.0),
+                  child: OutlinedButton.icon(
+                    style: ButtonStyle(
+                      alignment: Alignment.centerRight,
+                      backgroundColor: MaterialStateProperty.all(Colors.white),
+                    ),
+                    onPressed: () {
+                      playSound(7);
+                    },
+                    icon: Icon(Icons.music_note),
+                    label: Container(
+                      height: 30,
+                      width: 150,
+                      color: Colors.black,
+                    ),
+                  ),
+                ),
+              ),
+              Card(
+                child: Padding(
+                  padding: const EdgeInsets.all(18.0),
+                  child: OutlinedButton.icon(
+                    style: ButtonStyle(
+                      alignment: Alignment.centerRight,
+                      backgroundColor: MaterialStateProperty.all(Colors.white),
+                    ),
+                    onPressed: () {
+                      playSound(1);
+                    },
+                    icon: Icon(Icons.music_note),
+                    label: Container(
+                      height: 30,
+                      width: 150,
+                      color: Colors.black,
+                    ),
                   ),
                 ),
               ),
             ],
-          ),
-        ),
-      ),
+          )),
     );
   }
 }

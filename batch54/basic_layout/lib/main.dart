@@ -8,32 +8,136 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Material App',
       home: Scaffold(
+          backgroundColor: Colors.black,
           appBar: AppBar(
             title: Text('Material App Bar'),
           ),
-          body: Row(
+          body: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              BlueBox(),
-              BlueBox(),
-              BlueBox(),
+              Card(
+                child: OutlinedButton.icon(
+                  style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all(Colors.white),
+                    alignment: Alignment.centerRight,
+                  ),
+                  onPressed: () {},
+                  icon: Icon(Icons.music_note),
+                  label: Container(
+                    height: 30,
+                    width: 150,
+                    color: Colors.black,
+                  ),
+                ),
+              ),
+              Card(
+                child: OutlinedButton.icon(
+                  style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all(Colors.white),
+                    alignment: Alignment.centerRight,
+                  ),
+                  onPressed: () {},
+                  icon: Icon(Icons.music_note),
+                  label: Container(
+                    height: 30,
+                    width: 150,
+                    color: Colors.black,
+                  ),
+                ),
+              ),
+              Card(
+                child: OutlinedButton.icon(
+                  style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all(Colors.white),
+                    alignment: Alignment.centerRight,
+                  ),
+                  onPressed: () {},
+                  icon: Icon(Icons.music_note),
+                  label: Container(
+                    height: 30,
+                    width: 150,
+                    color: Colors.black,
+                  ),
+                ),
+              ),
+              Card(
+                child: OutlinedButton.icon(
+                  style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all(Colors.white),
+                    alignment: Alignment.centerRight,
+                  ),
+                  onPressed: () {},
+                  icon: Icon(Icons.music_note),
+                  label: Container(
+                    height: 30,
+                    width: 150,
+                    color: Colors.black,
+                  ),
+                ),
+              ),
+              Card(
+                child: OutlinedButton.icon(
+                  style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all(Colors.white),
+                    alignment: Alignment.centerRight,
+                  ),
+                  onPressed: () {},
+                  icon: Icon(Icons.music_note),
+                  label: Container(
+                    height: 30,
+                    width: 150,
+                    color: Colors.black,
+                  ),
+                ),
+              ),
+              Card(
+                child: OutlinedButton.icon(
+                  style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all(Colors.white),
+                    alignment: Alignment.centerRight,
+                  ),
+                  onPressed: () {},
+                  icon: Icon(Icons.music_note),
+                  label: Container(
+                    height: 30,
+                    width: 150,
+                    color: Colors.black,
+                  ),
+                ),
+              ),
+              Card(
+                child: OutlinedButton.icon(
+                  style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all(Colors.white),
+                    alignment: Alignment.centerRight,
+                  ),
+                  onPressed: () {},
+                  icon: Icon(Icons.music_note),
+                  label: Container(
+                    height: 30,
+                    width: 150,
+                    color: Colors.black,
+                  ),
+                ),
+              ),
+              Card(
+                child: OutlinedButton.icon(
+                  style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all(Colors.white),
+                    alignment: Alignment.centerRight,
+                  ),
+                  onPressed: () {},
+                  icon: Icon(Icons.music_note),
+                  label: Container(
+                    height: 30,
+                    width: 150,
+                    color: Colors.black,
+                  ),
+                ),
+              ),
             ],
           )),
-    );
-  }
-}
-
-class BlueBox extends StatelessWidget {
-  const BlueBox({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      height: 50,
-      width: 50,
-      decoration: BoxDecoration(
-        color: Colors.red[300],
-        border: Border.all(),
-      ),
     );
   }
 }
